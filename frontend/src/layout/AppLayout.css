@@ -1,0 +1,25 @@
+.app-layout {
+    min-height: 100vh;
+    background-color: var(--bg-soft);
+}
+
+.main-content {
+    margin-top: var(--header-height);
+    padding: var(--spacing-xl);
+    transition: margin-left var(--transition-slow);
+}
+
+/* Desktop: Add left margin for sidebar */
+@media (min-width: 769px) {
+    .main-content {
+        margin-left: var(--sidebar-width);
+    }
+}
+
+/* Mobile: No left margin */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: var(--spacing-md);
+    }
+}

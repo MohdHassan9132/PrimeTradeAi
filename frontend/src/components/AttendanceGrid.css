@@ -1,0 +1,80 @@
+.attendance-grid-container {
+    margin-top: var(--spacing-lg);
+}
+
+.attendance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.attendance-cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.attendance-cell.present {
+    background-color: var(--status-present);
+    color: white;
+}
+
+.attendance-cell.absent {
+    background-color: var(--status-absent);
+    color: var(--text-secondary);
+}
+
+.attendance-cell:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+    z-index: 10;
+}
+
+.attendance-day {
+    font-size: 0.875rem;
+}
+
+.attendance-legend {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+    justify-content: center;
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-light);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.legend-box {
+    width: 20px;
+    height: 20px;
+    border-radius: var(--radius-sm);
+}
+
+.legend-box.present {
+    background-color: var(--status-present);
+}
+
+.legend-box.absent {
+    background-color: var(--status-absent);
+}
+
+@media (max-width: 768px) {
+    .attendance-grid {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}

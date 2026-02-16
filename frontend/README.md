@@ -1,16 +1,45 @@
-# React + Vite
+# Attendance System Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Attendance system frontend is a React application used to interact with the backend attendance system.
 
-Currently, two official plugins are available:
+It provides dashboards for admin users and field agents with role based navigation and protected routing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+React
+React Router
+Axios
+Context API
+Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Core Features
 
-## Expanding the ESLint configuration
+Login and authentication
+Protected routes based on user roles
+Admin dashboard for managing agents
+Field agent attendance pages
+Avatar upload
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Routing Structure
+
+Public routes include landing page and login.
+Protected routes are wrapped by ProtectedRoute and AppLayout.
+
+## Authentication Strategy
+
+AuthContext manages user state globally.
+Axios interceptor refreshes expired tokens automatically.
+Cookies are used instead of local storage for security.
+
+## Setup
+
+npm install
+npm run dev
+
+## Folder Structure
+
+api contains API handlers
+context manages authentication state
+layout defines sidebar and header
+pages contain admin and field agent views
+routes include protected route wrapper

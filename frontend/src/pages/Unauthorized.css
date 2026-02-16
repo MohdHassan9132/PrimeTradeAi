@@ -1,0 +1,36 @@
+.unauthorized-page {
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2xl);
+}
+
+.unauthorized-content {
+    text-align: center;
+    max-width: 400px;
+}
+
+.unauthorized-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-xl);
+    color: var(--text-tertiary);
+}
+
+.unauthorized-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.unauthorized-content h1 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.unauthorized-content p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+}

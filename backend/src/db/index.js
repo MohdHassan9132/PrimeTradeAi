@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 const dbConnection = async (DB_URL, DB_NAME) => {
   if (!DB_URL || !DB_NAME) {
     throw new Error("Database env variables missing");
