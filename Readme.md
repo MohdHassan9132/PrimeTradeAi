@@ -1,5 +1,15 @@
 # PrimeTradeAi – Delivery Attendance Management System
 
+## 🌐 Live Deployment
+
+**Frontend (Netlify)**
+https://attendance-system-primetradeai.netlify.app/
+
+**Backend API (Render)**
+https://primetradeai-tmvs.onrender.com/api/v1
+
+---
+
 ## Overview
 
 PrimeTradeAi is a role-based delivery attendance management system built with a scalable backend architecture and a simple dashboard interface.
@@ -17,6 +27,12 @@ The system allows admins to manage field agents and track their attendance using
 * Soft delete agents (disable login access)
 * View today’s overall working status
 
+**Demo Credentials (Admin)**
+Email: [primetradeai@gmail.com](mailto:primetradeai@gmail.com)
+Password: Primetradeai@123
+
+---
+
 **Field Agent (FE)**
 
 * Secure login using cookie-based authentication
@@ -24,6 +40,10 @@ The system allows admins to manage field agents and track their attendance using
 * Daily check-out with image and GPS location
 * View current day status
 * View monthly attendance summary
+
+**Demo Credentials (Field Agent)**
+Email: [primetradeai123@gmail.com](mailto:primetradeai123@gmail.com)
+Password: PrimeTradeAi@123
 
 ---
 
@@ -144,12 +164,6 @@ Example Actions:
 
 ---
 
-## API Documentation
-
-### Swagger Documentation
-
-Swagger UI is included for structured API exploration.
-
 ### Postman Collection
 
 Complete API requests with payload examples and responses:
@@ -173,7 +187,7 @@ The mobile version is built using Capacitor and connects directly to the same ba
 
 ---
 
-## Setup
+## Local Setup
 
 ### Backend
 
@@ -200,11 +214,11 @@ PrimeTradeAi is a modular role-based attendance system designed with scalability
 Admins manage field agents and monitor attendance with location and media proof.
 Field agents perform daily attendance actions through a secure dashboard or mobile app.
 
-The project demonstrates:
+This project demonstrates:
 
 * REST API design
 * JWT authentication
 * Role-based access
-* Scalable backend structure
+* Scalable backend architecture
 * Frontend integration
-* Deployment-ready architecture
+* Deployment-ready structure
